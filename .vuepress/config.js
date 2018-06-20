@@ -9,7 +9,7 @@ module.exports = {
 		lastUpdated: 'Last Updated',
 
 		// Assumes GitHub. Can also be a full GitLab url.
-		repo: 'vuejs/vuepress',
+		repo: 'janisrozenfelds/documentation-page-vuepress',
 		// Customising the header label
 		// Defaults to "GitHub"/"GitLab"/"Bitbucket" depending on `themeConfig.repo`
 		repoLabel: 'Contribute!',
