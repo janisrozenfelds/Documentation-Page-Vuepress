@@ -10,20 +10,12 @@ module.exports = {
 			lang: 'English',
 			title: "Documentation Exmaple Page",
 			description: '----'
-		},
-		'/kr/': {
-			lang: 'Other Language',
-			title: "Documentation Exmaple Page",
-			description: '----'
 		}
 	},
 
 	themeConfig: {
 		// Header Nav Logo
 		logo: '/logo.svg',
-
-		// string | boolean
-		lastUpdated: 'Last Updated',
 
 		// Assumes GitHub. Can also be a full GitLab url.
 		repo: 'janisrozenfelds/documentation-page-vuepress/',
@@ -48,15 +40,10 @@ module.exports = {
 			'/': {
 				selectText: 'Languages',
 				label: 'English',
+				// string | boolean
+				lastUpdated: 'Last Updated',
 				sidebar: [
 					'/guide/'
-				]
-			},
-			'/kr/': {
-				selectText: 'Languages2',
-				label: 'Korean',
-				sidebar: [
-					'/kr/guide/page'
 				]
 			}
 		}
