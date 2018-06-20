@@ -1,15 +1,32 @@
 module.exports = {
 	base: '/documentation-page-vuepress/',
-	title: 'VuePress Example Pages',
+	title: 'Documentation Exmaple Page',
 	description: 'VuePress and deployed on Github Pages',
-	// dest: './docs',
+	dest: './docs',
+
+		// Header Nav Language button
+		locales: {
+		'/': {
+			lang: 'English',
+			title: "Documentation Exmaple Page",
+			description: '----'
+		},
+		'/kr/': {
+			lang: 'Other Language',
+			title: "Documentation Exmaple Page",
+			description: '----'
+		}
+	},
 
 	themeConfig: {
+		// Header Nav Logo
+		logo: '/logo.svg',
+
 		// string | boolean
 		lastUpdated: 'Last Updated',
 
 		// Assumes GitHub. Can also be a full GitLab url.
-		repo: 'janisrozenfelds/documentation-page-vuepress',
+		repo: 'janisrozenfelds/documentation-page-vuepress/',
 		// Customising the header label
 		// Defaults to "GitHub"/"GitLab"/"Bitbucket" depending on `themeConfig.repo`
 		repoLabel: 'Contribute!',
@@ -17,14 +34,31 @@ module.exports = {
 		// Optional options for generating "Edit this page" link
 
 		// if your docs are in a different repo from your main project:
-		docsRepo: 'janisrozenfelds/documentation-page-vuepress',
+		docsRepo: 'janisrozenfelds/documentation-page-vuepress/',
 		// if your docs are not at the root of the repo:
-		docsDir: 'docs',
+		docsDir: '',
 		// if your docs are in a specific branch (defaults to 'master'):
 		docsBranch: 'master',
 		// defaults to false, set to true to enable
 		editLinks: true,
 		// custom text for edit link. Defaults to "Edit this page"
-		editLinkText: 'Help us improve this page!'
+		editLinkText: 'Help us improve this page!',
+
+		locales: {
+			'/': {
+				selectText: 'Languages',
+				label: 'English',
+				sidebar: [
+					'/guide/'
+				]
+			},
+			'/kr/': {
+				selectText: 'Languages2',
+				label: 'Korean',
+				sidebar: [
+					'/kr/guide/page'
+				]
+			}
+		}
 	}
 }
