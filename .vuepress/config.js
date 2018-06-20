@@ -15,7 +15,7 @@ module.exports = {
 
 	themeConfig: {
 		// Header Nav Logo
-		logo: '/logo.png',
+		logo: '/Logo.png',
 
 		// Assumes GitHub. Can also be a full GitLab url.
 		repo: 'janisrozenfelds/documentation-page-vuepress/',
