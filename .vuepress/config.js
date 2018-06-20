@@ -38,9 +38,9 @@ module.exports = {
 
 		locales: {
 			'/': {
-				selectText: 'Languages',
 				label: 'English',
-				// string | boolean
+				selectText: 'Languages',
+				editLinkText: 'Edit this page on GitHub',
 				lastUpdated: 'Last Updated',
 				sidebar: [
 					'/guide/'
