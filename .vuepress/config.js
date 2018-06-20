@@ -5,6 +5,9 @@ module.exports = {
 	dest: './docs',
 
 	themeConfig: {
+		// string | boolean
+		lastUpdated: 'Last Updated',
+
 		// Assumes GitHub. Can also be a full GitLab url.
 		repo: 'vuejs/vuepress',
 		// Customising the header label
@@ -14,7 +17,7 @@ module.exports = {
 		// Optional options for generating "Edit this page" link
 
 		// if your docs are in a different repo from your main project:
-		docsRepo: 'vuejs/vuepress',
+		docsRepo: 'janisrozenfelds/documentation-page-vuepress',
 		// if your docs are not at the root of the repo:
 		docsDir: 'docs',
 		// if your docs are in a specific branch (defaults to 'master'):
