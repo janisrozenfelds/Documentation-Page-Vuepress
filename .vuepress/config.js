@@ -4,6 +4,22 @@ module.exports = {
 	description: 'VuePress and deployed on Github Pages',
 	dest: './docs',
 
+		// Asset Handling
+		configureWebpack: {
+			resolve: {
+				alias: {
+					// '@alias': 'assets/'
+					'@alias': 'documentation-page-vuepress/'
+				}
+			}
+		},
+
+		head: [
+	    ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
+	    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
+	    ['link', { rel: 'apple-touch-icon', href: `/icons/apple-touch-icon-152x152.png` }]
+		],
+
 		// Header Nav Language button
 		locales: {
 		'/': {
@@ -43,7 +59,9 @@ module.exports = {
 				editLinkText: 'Edit this page on GitHub',
 				lastUpdated: 'Last Updated',
 				sidebar: [
-					'/guide/'
+					'/',
+					'/guide/',
+					'/guide/page1'
 				]
 			}
 		}
