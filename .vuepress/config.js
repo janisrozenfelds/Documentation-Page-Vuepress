@@ -24,12 +24,13 @@ module.exports = {
 		locales: {
 		'/': {
 			lang: 'English',
-			title: "Documentation Exmaple Page",
+			title: "Help Center",
 			description: '----'
 		}
 	},
 
 	themeConfig: {
+
 		// Header Nav Logo
 		logo: '/Logo.png',
 

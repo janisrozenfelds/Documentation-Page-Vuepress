@@ -1,7 +1,10 @@
 
-# Hello World
+<!-- sidebar: false
+navbar: false
+editLink: false -->
+<!-- layout: HomePage -->
 
-## Hey
+# Hello World
 
 ``
 It's a test page, more things will come later.
