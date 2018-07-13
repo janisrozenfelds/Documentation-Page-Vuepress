@@ -1,10 +1,6 @@
-
-<!-- sidebar: false
-navbar: false
-editLink: false -->
-<!-- layout: HomePage -->
-
 # Hello World
+
+## Some cool changes
 
 ``
 It's a test page, more things will come later.
